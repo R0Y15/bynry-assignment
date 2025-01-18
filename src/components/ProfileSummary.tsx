@@ -12,7 +12,7 @@ interface ProfileSummaryProps {
 
 export default function ProfileSummary({ profile, onClose }: ProfileSummaryProps) {
   return (
-    <Card className="w-full sm:w-[600px] shadow-lg">
+    <Card className="w-full shadow-lg">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-xl font-bold">{profile.name}</CardTitle>
       </CardHeader>
