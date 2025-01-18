@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bynry Profile Management System
 
-## Getting Started
+A modern web application for managing user profiles with interactive maps and real-time search capabilities.
 
-First, run the development server:
+# Admin Credentials
+[View Credentials](https://drive.google.com/file/d/1ZA2LQaXrQ2DKVvZtIgIeNkyzdSZ0FHbg/view?usp=sharing)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🗺️ **Interactive Map Integration**
+  - View profile locations on an interactive map
+  - Real-time geocoding of addresses
+  - Customizable map markers
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 👤 **Profile Management**
+  - Create, edit, and delete user profiles
+  - Upload profile avatars
+  - Manage contact information
+  - Fallback avatars with initials
 
-## Learn More
+- 🔍 **Advanced Search & Filtering**
+  - Real-time search functionality
+  - Filter by name, location, and contact info
+  - Paginated results for better performance
 
-To learn more about Next.js, take a look at the following resources:
+- 🎨 **Modern UI/UX**
+  - Responsive design for all devices
+  - Beautiful animations and transitions
+  - Accessible components
+  - Dark mode support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔒 **Secure Admin Panel**
+  - Protected admin routes
+  - JWT authentication
+  - Role-based access control
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/bynry.git
+   cd bynry
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env.local
+   ```
+   Edit `.env.local` with your configuration:
+   ```env
+   NEXT_PUBLIC_API_URL=your_endpoint_url
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🏗️ Tech Stack
+
+- **Framework**: [Next.js 13](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Maps**: [Leaflet](https://leafletjs.com/)
+- **State Management**: React Hooks
+- **HTTP Client**: [Axios](https://axios-http.com/)
+- **Authentication**: JWT with HTTP-only cookies
+
+## 📱 Features in Detail
+
+### Profile Management
+- Create and edit user profiles
+- Upload and manage profile avatars
+- Automatic fallback to initials when no avatar is present
+- Real-time form validation
+- Responsive image handling
+
+### Map Integration
+- Interactive map display
+- Automatic geocoding of addresses
+- Custom map markers
+- Clustered markers for multiple profiles
+- Zoom and pan controls
+
+### Search & Filtering
+- Real-time search functionality
+- Multiple filter criteria
+- Paginated results (20 per page)
+- Optimized performance
+- Keyboard navigation support
+
+### Admin Panel
+- Secure authentication
+- Profile management interface
+- Bulk actions support
+- Activity logging
+- User-friendly dashboard
+
+## 🔐 Security Features
+
+- Protected API routes
+- JWT authentication
+- CSRF protection
+- Rate limiting
+- Input sanitization
+
+### Endpoints
+
+#### Profiles
+- `GET /profileDetails` - List all profiles
+- `GET /profileDetails/:id` - Get a specific profile
+- `POST /profileDetails` - Create a new profile
+- `PUT /profileDetails/:id` - Update a profile
+- `DELETE /profileDetails/:id` - Delete a profile
